@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.songmanager.NavBarController"
+      maxHeight="768.0" maxWidth="1366" prefWidth="1366" style="-fx-background-color:navy " alignment="CENTER">
+    <Button fx:id = "addRemoveSongsBtn" onAction="#addRemoveSongsBtnClick" style="-fx-background-color:navy; -fx-text-fill:white; -fx-font-size: 16">Modify Library</Button>
+    <Button fx:id = "homeBtn" onAction="#homeBtnClick" style="-fx-background-color:navy; -fx-text-fill:white; -fx-font-size: 16; ">Home</Button>
+    <Button fx:id = "browseSongsBtn" onAction="#browseSongsBtnClick" style="-fx-background-color:navy; -fx-text-fill:white; -fx-font-size: 16" >Browse Songs</Button>
+</HBox>

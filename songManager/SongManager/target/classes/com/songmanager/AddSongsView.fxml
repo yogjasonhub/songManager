@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.ListView?>
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.songmanager.AddSongsController"
+      prefHeight="700.0" prefWidth="700.0" style="-fx-background-color: royalblue;" spacing="0"  alignment="TOP_CENTER" >
+
+    <HBox  alignment="CENTER" style="-fx-padding: 25 25 25 25; -fx-background-color: royalblue; -fx-spacing: 30">
+        <!--Manually add a song-->
+        <VBox style="-fx-padding: 25 25 25 25; -fx-background-color: cornflowerblue;">
+            <!--Manually add a song-->
+            <Label fx:id="mainHeader" text="Add a song" style =" -fx-text-fill: #fff; -fx-font-size: 24"/>
+            <!--Song Title-->
+            <Label fx:id="songTitleLabel" text="Song Title" style =" -fx-text-fill: #fff; -fx-font-size: 16"/> <TextField fx:id="songTitle" style="-fx-max-width: 375"></TextField>
+            <Label fx:id="titleError" style="-fx-text-fill:Red"></Label>
+
+            <!--Artist Name-->
+            <Label fx:id="artistNameLabel" text="Artist Name" style =" -fx-text-fill: #fff; -fx-font-size: 16"/><TextField fx:id="artistName" style="-fx-max-width: 375"></TextField>
+            <Label fx:id="artistError" style="-fx-text-fill:Red"></Label>
+
+            <!--Album Name-->
+            <Label fx:id="albumLabel" text="Album" style =" -fx-text-fill: #fff; -fx-font-size: 16"/><TextField fx:id="album" style="-fx-max-width: 375"></TextField>
+            <Label fx:id="albumError" style="-fx-text-fill:Red"></Label>
+
+            <!--Genre Label-->
+            <Label fx:id="genreLabel" text="Genre" style =" -fx-text-fill: #fff; -fx-font-size: 16"/><TextField fx:id="genre" style="-fx-max-width: 375"></TextField>
+            <Label fx:id="genreError" style="-fx-text-fill:Red"></Label>
+
+            <!--Song Length-->
+            <Label fx:id="songLengthLabel" text="Song Length (HH:MM:SS)" style =" -fx-text-fill: #fff; -fx-font-size: 16"/>
+            <HBox>
+                <TextField fx:id="hours" style="-fx-max-width: 375" promptText="Hours"></TextField>
+                <TextField fx:id="minutes" style="-fx-max-width: 375" promptText="Minutes"></TextField>
+                <TextField fx:id="seconds" style="-fx-max-width: 375" promptText="Seconds"></TextField>
+            </HBox>
+            <Label fx:id="lengthError" style="-fx-text-fill:Red"></Label>
+
+            <!--Record Label-->
+            <Label fx:id="recordLabelLabel" text="Record Label" style =" -fx-text-fill: #fff; -fx-font-size: 16"/><TextField fx:id="recordLabel" style="-fx-max-width: 375"></TextField>
+            <Label fx:id="recordLabelError" style="-fx-text-fill:Red"></Label>
+
+            <!--Year-->
+            <Label fx:id="yearReleasedLabel" text="Year Released" style =" -fx-text-fill: #fff; -fx-font-size: 16"/><ComboBox fx:id="yearReleased" style="-fx-max-width: 375"></ComboBox>
+
+            <!--User feedback message-->
+            <Label fx:id="feedbackLabel" text="" style =" -fx-text-fill: #fff; -fx-font-size: 16; -fx-font-size: 16"/>
+            <!--Add Song Button-->
+            <Button fx:id="addSongBtn" text="Add Song" onAction="#AddSongBtnClick"  style="-fx-background-color:navy; -fx-text-fill:white; -fx-font-size: 16"/>
+        </VBox>
+
+    </HBox>
+</VBox>

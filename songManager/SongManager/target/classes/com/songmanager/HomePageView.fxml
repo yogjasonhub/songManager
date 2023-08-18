@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.songmanager.HomePageController"
+      prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: royalblue;" spacing="0"  alignment="TOP_CENTER" >
+
+    <fx:include source="NavBar.fxml"></fx:include>
+    <Label fx:id="pageHeader" text="Welcome to Song Manager" style =" -fx-text-fill: #fff; -fx-font-size: 36"/>
+
+    <HBox  alignment="CENTER" style="-fx-padding: 25 25 25 25; -fx-background-color: royalblue; -fx-spacing: 30">
+
+        <VBox style="-fx-padding: 25 25 25 25; -fx-background-color: cornflowerblue;" >
+            <Label text="Modify your library" style =" -fx-text-fill: #fff; -fx-font-size: 24"/>
+            <Label text="Add, edit or remove songs from your library." style =" -fx-text-fill: #fff; -fx-font-size: 18"/>
+            <Button style="-fx-background-color:navy; -fx-text-fill:white; -fx-font-size: 16" onAction="#switchToAddRemoveSongsView">Go</Button>
+        </VBox>
+        <VBox style="-fx-padding: 25 25 25 25; -fx-background-color: cornflowerblue;">
+            <Label text="Browse your library" style =" -fx-text-fill: #fff; -fx-font-size: 24"/>
+            <Label text="Browse the songs in your library using several filters." style =" -fx-text-fill: #fff; -fx-font-size: 18"/>
+            <Button style="-fx-background-color:navy; -fx-text-fill:white; -fx-font-size: 16" onAction="#switchToBrowseSongsView">Go</Button>
+        </VBox>
+    </HBox>
+
+</VBox>
